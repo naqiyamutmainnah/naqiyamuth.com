@@ -20,4 +20,4 @@ Social media:
 
 ### Home
 
-![Preview Home](./preview/work.png)
+![Preview Home](./preview/naqiyamuth_work.png)
