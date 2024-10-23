@@ -122,12 +122,6 @@ body {
     }
 }
 
-.work-item {
-    padding: 1.5rem;
-    border-radius: 5%;
-    position: relative;
-    overflow: hidden;
-}
 
 .work-item:hover {
     background-color: #585757;
@@ -140,12 +134,6 @@ body {
 
 }
 
-.work-image img {
-    max-width: 100%;
-    border-radius: 3%;
-    display: flex;
-    flex-direction: row;
-}
 .work-item h3 {
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -171,15 +159,36 @@ body {
     z-index: 1;
 }
 
+.work-item {
+    position: relative; /* Pastikan work-item memiliki posisi relatif */
+    padding: 1.5rem;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.work-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none; /* Gambar tidak menangkap klik */
+}
+
 .work-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2; /* Di atas overlay */
-    padding: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk teks */
-    width: 100%;
+    position: relative; /* Tambahkan position relative */
+    z-index: 2;
+}
+
+.learn-more-link {
+    color: #1E90FF;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 3; /* Pastikan link berada di atas semua elemen lain */
+    position: relative;
+}
+
+.learn-more-link:hover {
+    color: #87CEFA;
 }
 
 /* About Section */
