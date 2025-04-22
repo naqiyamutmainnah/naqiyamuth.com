@@ -20,7 +20,7 @@ function typeWriter(textElement, text, speed) {
 
 // Gabungkan teks dengan pemisah baris
 const typewriter = document.getElementById("typewriter");
-const textToType = "I'M NAQIYA\nDATA SCIENTIST"; // Pisahkan teks dengan newline (\n)
+const textToType = "I'M NAQIYA\nDATA ANALYST"; // Pisahkan teks dengan newline (\n)
 typeWriter(typewriter, textToType, 150); // Kecepatan mengetik 150ms
 
 // Animasi click untuk work project
